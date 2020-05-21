@@ -1,4 +1,4 @@
-cloud接口文档(v.200521)
+接口文档(v.200521)
 =
 文档内容最后更新于：2020-05-21 
 
@@ -42,7 +42,7 @@ i.注：空值（空值或者空字符串）不参与签名。<br>
 ii.注：value需要进行UrlEncode编码
 
 示例:
-amount=10000&fundAccountNo=6217003260005288000&fundAccountUser=%E5%BC%A0%E4%B8%89&merchantNo=20200507105901967155208220&notifyUrl=https%3A%2F%2Fwww.baidu.com%2Fnotify&orderNo=1589786340457&orderType=ISSUED&payMode=ebank&returnUrl=https%3A%2F%2Fwww.baidu.com&ts=1589788853&key=a53a9b0cc2839846f322b5
+amount=100&fundAccountName=%E6%B5%8B%E8%AF%95%E5%95%86%E6%88%B7%E7%9A%84%E6%94%AF%E4%BB%98%E5%AE%9D&fundAccountNo=123456789&fundAccountUser=%E6%B5%8B%E8%AF%95%E5%95%86%E6%88%B7&merchantNo=20200507151719795154545655&notifyUrl=https%3A%2F%2Fwww.baidu.com%2F&orderNo=00000000000001&orderType=ISSUED&payMode=ebank&returnUrl=https%3A%2F%2Fwww.baidu.com%2F&ts=1590052086&sign=6785507C5026704FF24511345DFE687
 
 
 2.DigestUtils.md5Hex(originalStr + "key=" + apiKey) <br>
