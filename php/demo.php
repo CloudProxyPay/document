@@ -98,7 +98,7 @@ echo "\n\n";
 print_r("==================验证签名==================");
 $json = '{
 	"amount": 10000,
-	"fundAccountName": "张三网银",
+	"fundAccountName": "中国银行",
 	"fundAccountNo": "6217003260005288000",
 	"fundAccountUser": "张三",
 	"merchantNo": "20200507105801957145298221",
