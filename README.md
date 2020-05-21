@@ -48,11 +48,11 @@ amount=100&fundAccountName=%E6%B5%8B%E8%AF%95%E5%95%86%E6%88%B7%E7%9A%84%E6%94%A
 2.DigestUtils.md5Hex(originalStr + "key=" + apiKey) <br>
 i.用DigestUtils.md5Hex算法将“originalStr + "key=" + apiKey”进行加密得到签名信息
 
-3.[c# demo]
+3.[c# demo](https://github.com/CloudProxyPay/document/blob/master/C%23/demo.cs)
 
-4.[java demo]
+4.[java demo](https://github.com/CloudProxyPay/document/blob/master/java/demo.java)
 
-5.[php demo]
+5.[php demo](https://github.com/CloudProxyPay/document/blob/master/php/demo.php)
 
 同步通知 （returnUrl）
 -
