@@ -56,7 +56,7 @@ i.用DigestUtils.md5Hex算法将“originalStr + "key=" + apiKey”进行加密�
 
 同步通知 （returnUrl）
 -
-当创建订单时传入返回地址，订单结束后，用户点击“返回商户”，会在返回链接带上参数（returnUrl?urlparams）。参数内容参考[统一返回参数](https://github.com/passpay/passpay/#%E7%BB%9F%E4%B8%80%E8%BF%94%E5%9B%9E%E5%8F%82%E6%95%B0)，可通过签名算法计算签名的正确性。例：<br>
+当创建订单时传入返回地址，订单结束后，用户点击“返回商户”，会在返回链接带上参数（returnUrl?urlparams）。参数内容参考[统一返回参数](https://github.com/CloudProxyPay/document/blob/master/README.md#%E7%BB%9F%E4%B8%80%E8%BF%94%E5%9B%9E%E5%8F%82%E6%95%B0)，可通过签名算法计算签名的正确性。例：<br>
 returnUrl?<br>
 
     amount=10000&
@@ -96,7 +96,7 @@ returnUrl?<br>
     
  异步回调 （notifyUrl）
  -
-当创建订单时传入异步回调地址时，订单结束后（用户取消订单(-30)、用户支付超时（-40）、订单失败（-50）、订单已完成（50））进行通知，总共通知3次，每次间隔10 分钟，超时时间为10s，处理成功后返回 success，返回其他字符表示处理失败，会继续进行后续通知。通知内容参考[统一返回参数](https://github.com/passpay/passpay/#%E7%BB%9F%E4%B8%80%E8%BF%94%E5%9B%9E%E5%8F%82%E6%95%B0)，可通过签名算法计算签名的正确性 例：<br>
+当创建订单时传入异步回调地址时，订单结束后（用户取消订单(-30)、用户支付超时（-40）、订单失败（-50）、订单已完成（50））进行通知，总共通知3次，每次间隔10 分钟，超时时间为10s，处理成功后返回 success，返回其他字符表示处理失败，会继续进行后续通知。通知内容参考[统一返回参数](https://github.com/CloudProxyPay/document/blob/master/README.md#%E7%BB%9F%E4%B8%80%E8%BF%94%E5%9B%9E%E5%8F%82%E6%95%B0)，可通过签名算法计算签名的正确性 例：<br>
 curl -X POST "回调地址"<br>
   -H 'content-type: application/json' <br>
   -d '{<br>
