@@ -85,13 +85,13 @@ returnUrl?<br>
     
     payTime=1581586702&
     
-    ts=1589786373
+    ts=1589786373&
     
     payStatus=30&
     
     orderStatus=50&
 
-    sign=e88479b960c7193221c3e3eb1c32a5f4&
+    sign=e88479b960c7193221c3e3eb1c32a5f4
     
     
  异步回调 （notifyUrl）
@@ -127,13 +127,13 @@ curl -X POST "回调地址"<br>
     
     payTime=1581586702&
     
-    ts=1589786373
+    ts=1589786373&
     
     payStatus=30&
     
     orderStatus=50&
 
-    sign=e88479b960c7193221c3e3eb1c32a5f4&
+    sign=e88479b960c7193221c3e3eb1c32a5f4
 
 }'
 
