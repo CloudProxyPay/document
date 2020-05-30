@@ -11,14 +11,15 @@ print_r("==================订单创建==================");
 $array = array(
     'orderNo'=>'00000000000001',
     'merchantNo'=>$merchant_no,
-    'amount'=>700,
+    'amount'=>1000,
     'payMode'=>'ebank',
     'orderType'=>'ISSUED',
     'ts'=>time(),
     'notifyUrl'=>'https://www.baidu.com/notify',
     'returnUrl'=>'https://www.baidu.com/',
     'fundAccountNo'=>'6217003260005288000',
-    'fundAccountUser'=>'张三');
+    'fundAccountUser'=>'张三',
+    'fundAccountName'=>'中国银行');
 print_r($array);
 echo "\n";
 $sign_reduce=generate_sign_reduce($array);
@@ -97,21 +98,23 @@ foreach ($array as $key=>$value) {
 echo "\n\n";
 print_r("==================验证签名==================");
 $json = '{
-	"amount": 10000,
-	"fundAccountName": "中国银行",
-	"fundAccountNo": "6217003260005288000",
-	"fundAccountUser": "张三",
-	"merchantNo": "20200507105801957145298221",
+	"amount": 1000,
+	"realAmount": 1000,
 	"orderNo": "00000000000001",
-	"orderStatus": 50,
+	"systemOrderNo": "20200530155239426165489893",
+	"merchantNo": "20200507105801957145298221",
 	"orderType": "ISSUED",
 	"payMode": "ebank",
+	"fundAccountNo": "6217003260005288000",
+	"fundAccountUser": "张三",
+	"fundAccountName": "中国银行",
+	"fundAccountUrl": null,
+	"voucherUrl": "https://timgsa.baidu.com/timg.jpg",
+	"payTime": 1590825459,
+	"ts": 1590825128,
 	"payStatus": 30,
-	"payTime": 1589786773,
-	"realAmount": 10000,
-	"sign": "4d6053bb0dbf606e58ca476fdcd0c444",
-	"systemOrderNo": "20200518151933726139693961",
-	"ts": 1589786373
+	"orderStatus": 50,
+	"sign": "7e1e646c32f42d12d9aa303d131e30cb"
 }';
 //将json串转化成数组
 $verify_array=json_decode($json,true);
