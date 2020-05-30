@@ -166,8 +166,9 @@ iv.请求参数
 
 i.使用场景：查询订单信息。<br>
 ii.请求方式：POST<br>
-iii.请求地址：网关地址+ /cloud-pay/open/order/query  <br>
-iv.请求参数
+iii.Content-Type：application/json
+iv.请求地址：网关地址+ /cloud-pay/open/order/query  <br>
+v.请求参数
 
 参数名称  | 必须  | 数据类型 | 示例| 参数说明
  ---- | ----- | ------  | ------    | ------
