@@ -193,8 +193,8 @@ iv.请求参数
  fundAccountNo  | 否 | 字符串 | 6217003260005288000 | 资金账户编号
  fundAccountUser  | 否 | 字符串 | 张三 | 资金账户用户
  fundAccountName  | 否 | 字符串 | 中国银行 | 资金账户名称
- fundAccountUrl  | 否 | 字符串 | https://timgsa.baidu.com/timg.jpg& | 资金账户地址
- voucherUrl  | 否 | 字符串 | https://timgsa.baidu.com/timg.jpg& | 凭证地址
+ fundAccountUrl  | 否 | 字符串 | https://timgsa.baidu.com/timg.jpg | 资金账户地址
+ voucherUrl  | 否 | 字符串 | https://timgsa.baidu.com/timg.jpg | 凭证地址
  payTime  | 否 | 整数 | 1575948756 | 支付时间（秒级）
  ts  | 是 | 整数 | 1575948756 | 商户订单时间戳（秒级）
  payStatus  | 是 | 整数 | 30 | 支付状态，请参考支付状态枚举
