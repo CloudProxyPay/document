@@ -42,7 +42,7 @@ i.注：空值（空值或者空字符串）不参与签名。<br>
 ii.注：value需要进行UrlEncode编码
 
 示例:
-amount=1000&fundAccountName=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C&fundAccountNo=6217003260005288000&fundAccountUser=%E5%BC%A0%E4%B8%89&merchantNo=20200507105901967155208220&notifyUrl=https%3A%2F%2Fwww.baidu.com%2Fnotify&orderNo=00000000000001&orderType=ISSUED&payMode=ebank&returnUrl=https%3A%2F%2Fwww.baidu.com%2F&ts=1589788853
+amount=1000&fundAccountName=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C&fundAccountNo=6217003260005288000&fundAccountUser=%E5%BC%A0%E4%B8%89&merchantNo=20200507105901967155208220&notifyUrl=https%3A%2F%2Fwww.baidu.com%2Fnotify&orderNo=00000000000001&orderType=ISSUED&payMode=ebank&returnUrl=https%3A%2F%2Fwww.baidu.com%2F&ts=1590029822
 
 
 2.DigestUtils.md5Hex(originalStr + "key=" + apiKey) <br>
@@ -83,9 +83,9 @@ returnUrl?<br>
     
     voucherUrl=https://timgsa.baidu.com/timg.jpg&
     
-    payTime=1581586702&
+    payTime=1590029990&
     
-    ts=1589786373&
+    ts=1590029822&
     
     payStatus=30&
     
@@ -125,9 +125,9 @@ curl -X POST "回调地址"<br>
     
     voucherUrl=https://timgsa.baidu.com/timg.jpg&
     
-    payTime=1581586702&
+    payTime=1590029990&
     
-    ts=1589786373&
+    ts=1590029822&
     
     payStatus=30&
     
@@ -156,7 +156,7 @@ iv.请求参数
  fundAccountNo  | 下发是，提现否 | 字符串(<50) | 6217003260005288000 | 资金账户编号
  fundAccountUser  | 下发是，提现否 | 字符串(<50) | 张三 | 资金账户人
  fundAccountName  | 否 | 字符串(<50) | 中国银行 | 资金账户名称
- ts  | 是 | 整数 | 1589788853 | 商户订单时间戳（秒级）
+ ts  | 是 | 整数 | 1590029822 | 商户订单时间戳（秒级）
  notifyUrl  | 否 | 字符串 | https://www.baidu.com/notify | 后台通知地址
  returnUrl  | 否 | 字符串 | https://www.baidu.com | 支付完成用户返回地址
  sign  | 是 | 字符串 | 1c3ae12c00b95dce4c253bb7... | 参数签名，请按照签名算法生成
@@ -174,7 +174,7 @@ v.请求参数
  ---- | ----- | ------  | ------    | ------
  merchantNo  | 是 | 字符串 | 20200507105901967155208220 | 商户编号
  orderNo  | 是 | 字符串(<50) | 00000000000001 | 商户订单编号
- ts  | 是 | 整数 | 1589789856 | 商户订单时间戳（秒级）
+ ts  | 是 | 整数 | 1590029822 | 商户订单时间戳（秒级）
  sign  | 是 | 字符串 | 1c3ae12c00b95dce4c253bb7... | 参数签名，请按照签名算法生成
 
 
@@ -196,8 +196,8 @@ v.请求参数
  fundAccountName  | 否 | 字符串 | 中国银行 | 资金账户名称
  fundAccountUrl  | 否 | 字符串 | https://timgsa.baidu.com/timg.jpg | 资金账户地址
  voucherUrl  | 否 | 字符串 | https://timgsa.baidu.com/timg.jpg | 凭证地址
- payTime  | 否 | 整数 | 1575948756 | 支付时间（秒级）
- ts  | 是 | 整数 | 1575948756 | 商户订单时间戳（秒级）
+ payTime  | 否 | 整数 | 1590029990 | 支付时间（秒级）
+ ts  | 是 | 整数 | 1590029822 | 商户订单时间戳（秒级）
  payStatus  | 是 | 整数 | 30 | 支付状态，请参考支付状态枚举
  orderStatus  | 是 | 整数 | 50 | 订单状态，请参考订单状态枚举
  sign  | 是 | 字符串 | e88479b960c7193221c3e3eb1c32a5f4 | 签名
