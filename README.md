@@ -101,39 +101,39 @@ curl -X POST "回调地址"<br>
   -H 'content-type: application/json' <br>
   -d '{<br>
   
-    amount=1000&
+    "amount":1000,
     
-    realAmount=1000&
+    "realAmount":1000,
     
-    orderNo=00000000000001&
+    "orderNo":"00000000000001",
     
-    systemOrderNo=20200513111313358109498205&
+    "systemOrderNo":"20200513111313358109498205",
     
-    merchantNo=20200507105901967155208220&
+    "merchantNo":"20200507105901967155208220",
     
-    orderType=ISSUED&
+    "orderType":"ISSUED",
     
-    payMode=ebank&
+    "payMode":"ebank",
     
-    fundAccountNo=6217003260005288000&
+    "fundAccountNo":"6217003260005288000",
     
-    fundAccountUser=张三&
+    "fundAccountUser":"张三",
     
-    fundAccountName=中国银行&
+    "fundAccountName":"中国银行",
     
-    fundAccountUrl=https://timgsa.baidu.com/timg.jpg&
+    "fundAccountUrl":"https://timgsa.baidu.com/timg.jpg",
     
-    voucherUrl=https://timgsa.baidu.com/timg.jpg&
+    "voucherUrl":"https://timgsa.baidu.com/timg.jpg",
     
-    payTime=1590029990&
+    "payTime":1590029990,
     
-    ts=1590029822&
+    "ts":1590029822,
     
-    payStatus=30&
+    "payStatus":30,
     
-    orderStatus=50&
+    "orderStatus":50,
 
-    sign=e88479b960c7193221c3e3eb1c32a5f4
+    "sign":"e88479b960c7193221c3e3eb1c32a5f4"
 
 }'
 
