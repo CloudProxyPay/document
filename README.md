@@ -37,7 +37,7 @@
 -
 DigestUtils.md5Hex(originalStr + "key=" + apiKey)
 
-1.originalStr: 除sign参数外其他参数值非空（空值或者空字符串）的参数按参数名称字母正序排序然后以name=UrlEncode(value)形式组合， 通过&拼接得到结果将apiKey拼接在最后。<br>
+1.originalStr: 除sign参数外其他参数值非空（空值或者空字符串）的参数按参数名称字母正序排序然后以name=UrlEncode(value)形式组合，通过&拼接得到结果将apiKey拼接在最后。<br>
 i.注：空值（空值或者空字符串）不参与签名。<br>
 ii.注：value需要进行UrlEncode编码
 
