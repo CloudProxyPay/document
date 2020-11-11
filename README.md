@@ -232,7 +232,8 @@ v.请求参数
   值  | 说明  
  ---- | -----  
  ISSUED  | 下发
- RECHARGE  | 充值 
+ WITHDRAW  | 提现 
+ RECHARGE  | 充值
  
  5.支付模式（payMode）枚举
  
