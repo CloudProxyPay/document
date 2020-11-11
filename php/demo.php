@@ -7,7 +7,7 @@ $merchant_no = "";
 
 echo "\n";
 print_r("==================订单创建==================");
-#注意：fundAccountNo与fundAccountUser下发订单必填，充值订单不填
+#注意：fundAccountNo与fundAccountUser下发提现订单必填，充值订单不填
 $array = array(
     'orderNo'=>'00000000000001',
     'merchantNo'=>$merchant_no,
@@ -16,7 +16,6 @@ $array = array(
     'orderType'=>'ISSUED',
     'ts'=>time(),
     'notifyUrl'=>'https://www.baidu.com/notify',
-    'returnUrl'=>'https://www.baidu.com/',
     'fundAccountNo'=>'6217003260005288000',
     'fundAccountUser'=>'张三',
     'fundAccountName'=>'中国银行');
