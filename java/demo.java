@@ -57,7 +57,6 @@ public class CloudpayDemo {
 
         jsonObject.put("fundAccountName", "中国银行");
         jsonObject.put("notifyUrl", "https://www.baidu.com/");
-        jsonObject.put("returnUrl", "https://www.baidu.com/");
 
         String signReduce = generateSignReduce(jsonObject);
         String sign = encodeMD5(signReduce + "&key=" + KEY);
