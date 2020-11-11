@@ -59,7 +59,6 @@ class MainClass {
 
 		parameters.Add("fundAccountName", "中国银行");
 		parameters.Add("notifyUrl", "https://www.baidu.com/");
-		parameters.Add("returnUrl", "https://www.baidu.com/");
 		parameters.Add("ts", ts);
 
 		
